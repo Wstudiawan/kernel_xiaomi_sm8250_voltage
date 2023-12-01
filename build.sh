@@ -253,7 +253,7 @@ START=$(date +"%s")
         elif [ -d ${KERNEL_DIR}/clangB ];
            then
            make O=out CC=clang ARCH=arm64 ${DEFCONFIG}
-		   if [ "$METHOD" = "lto" ]; then
+		   if [ "$METHOD" = "" ]; then
 		     scripts/config --file ${OUT_DIR}/.config \
              -e LTO_CLANG \
              -d THINLTO
