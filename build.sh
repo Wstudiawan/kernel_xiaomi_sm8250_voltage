@@ -65,7 +65,7 @@ ZIPNAME=Klinker
 FINAL_ZIP=${ZIPNAME}-${VERSION}-${DEVICE}-Klinker-KERNEL-MIUI-${TM}.zip
 
 # Specify compiler [ proton, nexus, aosp ]
-COMPILER=aosp
+COMPILER=proton
 
 # Clone ToolChain
 function cloneTC() {
